@@ -18,7 +18,7 @@ const About = () => {
   );
 }
 
-const Contents = () => {
+const Contents = (props) => {
     return (
       <div className="content">
         <Switch>
@@ -35,19 +35,32 @@ const Contents = () => {
             return <Route key={i} exact path={v.path} component={v.component} />;
           })}
         </Switch>
+        <button onClick={props.onClickButton}>get starting!</button>
       </div>
     );
 }
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      sampleState: 'not start yet',
+    };
+  }
+
+  reactStart = value => {
+    this.setState({ sampleState: 'started!' });
+  };
   render() {
     return (
       <div className="App">
         <Header className="App-header">
 
           <h1 className="App-title">React Starter</h1>
+          <h2>{this.state.sampleState}</h2>
         </Header>
-        <Contents />
+        <Contents onClickButton={this.reactStart} />
       </div>
     );
   }
