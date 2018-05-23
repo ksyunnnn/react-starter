@@ -1,3 +1,15 @@
+# Get started
+
+```
+git clone https://github.com/ksyunnnn/react-starter
+cd react-starter
+yarn
+# or npm install
+yarn start
+# or npm start
+# access http://localhost:3000/
+```
+
 # package.json
 ```
 {
