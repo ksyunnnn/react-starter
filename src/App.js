@@ -13,19 +13,18 @@ class App extends Component {
 
   reactStart = () => {
     this.setState(prevState => ({
-     isToggleStart: !prevState.isToggleStart
-   }));
+      isToggleStart: !prevState.isToggleStart,
+    }));
   };
   render() {
     return (
       <div className="App">
         <Header className="App-header">
-
           <h1 className="App-title">React Starter</h1>
         </Header>
         <MainContainer>
-          <h2>{this.state.isToggleStart?'not start yet':'start!!!!!!'}</h2>
-          <button onClick={this.reactStart}>{this.state.isToggleStart?'start':'stop'}</button>
+          <h2>{this.state.isToggleStart ? 'not start yet' : 'start!!!!!!'}</h2>
+          <button onClick={this.reactStart}>{this.state.isToggleStart ? 'start' : 'stop'}</button>
         </MainContainer>
       </div>
     );
