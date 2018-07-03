@@ -58,3 +58,5 @@ export const MainContainer = styled.div`
   `}
 `;
 ```
+
+You can use Prettier via `git add` before you commit.
