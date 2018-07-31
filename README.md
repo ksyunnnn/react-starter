@@ -60,3 +60,7 @@ export const MainContainer = styled.div`
 ```
 
 You can use Prettier via `git add` before you commit.
+// or `./node_modules/.bin/prettier --write "./**/*.js"`
+
+
+You can import resorce without ``../`` by `.env`ファイル

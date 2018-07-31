@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Colors } from '../variables';
-import { media } from '../helpers/media-query';
+import { Colors } from 'variables';
+import { media } from 'helpers/media-query';
 
 export const Header = styled.div`
   padding: 2vh;
