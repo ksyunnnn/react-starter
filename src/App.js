@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Header, MainContainer } from 'components/styled-components';
+import { Header, MainContainer } from 'components/StyledComponents';
 
 class App extends Component {
   constructor(props) {
